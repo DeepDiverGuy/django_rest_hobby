@@ -7,8 +7,14 @@ these models. Permission functionality has also been implemented for some operat
 
 # To get it working
 
-  - In your projects settings.py, configure the SECRET_KEY.
+  - Install the requirements:
+  
+        pip install django
+        pip install djangorestframework
+  - In settings.py inside 'tutorial' folder, configure the SECRET_KEY.
   - In your terminal:
   
         python manage.py migrate
+        python manage.py runserver
+  - Look inside tutorial.urls.py & person.urls.py to know about the url routes.
 
