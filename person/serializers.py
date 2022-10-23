@@ -21,7 +21,7 @@ class PersonSerializer(serializers.ModelSerializer):
 
 class UserSerializer(serializers.ModelSerializer):
 
-    person_set = serializers.PrimaryKeyRelatedField(many=True, queryset=Person.objects.all()) # Notice: if you don't use '_set' at the end, then it's gonna through an error.
+    person_set = serializers.PrimaryKeyRelatedField(many=True, queryset=Person.objects.all()) # Notice: if you don't use '_set' at the end, then it's gonna through an error. The documentation is misleading on this one.
 
     class Meta:
         model = User
